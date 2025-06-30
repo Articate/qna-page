@@ -6,5 +6,10 @@ export default function Home() {
 
   if (loading) return <p>Loading...</p>;
 
-  return <Accordion data={data} />;
+  return (
+    <section class="page-section faq">
+      <h2>Spørsmål og svar</h2>
+      <Accordion data={data} />
+    </section>
+  );
 }
