@@ -1,0 +1,30 @@
+:root {
+    /* Colors */
+    --color-background: #f6f7fc;
+    --color-background-content: #f6f7fc;
+    --color-background-secondary: #262045;
+    --color-surface: #ffffff;
+    --color-border: #e6e6ed;
+    --color-text: #222222;
+    --color-text-secondary: #fff;
+    --color-accent: #0070f3;
+    --color-accent-hover: #005ecb;
+  
+    /* Typography */
+    --font-family-base: graphik-medium,Arial,Helvetica,sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm: 0.9rem;
+    --font-size-lg: 1.2rem;
+  
+    /* Spacing */
+    --spacing-xs: 0.3rem;
+    --spacing-sm: 0.7rem;
+    --spacing-md: 1.3rem;
+    --spacing-lg: 3rem;
+  
+    /* Border radius */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+  }
+  

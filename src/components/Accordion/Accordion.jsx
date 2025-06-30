@@ -1,8 +1,9 @@
 import AccordionItem from './AccordionItem';
+import styles from './Accordion.module.css';
 
 export default function Accordion({ data }) {
   return (
-    <div className="accordion">
+    <div className={styles.accordion}>
       {data.map(item => (
         <AccordionItem
           key={item.id}

@@ -1,0 +1,18 @@
+
+.footer {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-secondary);
+    padding: 96px 0 48px;
+  }
+  
+  .footerContent {
+    max-width:1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    text-align: left;
+  }
+  
+  .copy {
+    font-size: var(--font-size-sm);
+  }
+  

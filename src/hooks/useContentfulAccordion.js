@@ -12,7 +12,10 @@ export function useContentfulAccordion() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await client.getEntries({ content_type: 'accordion', include: 2 });
+      const res = await client.getEntries({
+        content_type: 'accordion',
+        include: 2
+      });
 
       const entries = res.items.flatMap(item => {
         const items = item.fields.accordionItems || [];

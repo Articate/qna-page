@@ -1,22 +1,23 @@
 import { useState } from 'react';
+import classNames from 'classnames';
+import styles from './AccordionItem.module.css';
 
 export default function AccordionItem({ question, answer }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="accordion-item">
+    <div className={classNames(styles.accordionItem, { [styles.open]: open })}>
       <button
-        className="accordion-toggle"
+        className={styles.accordionToggle}
         onClick={() => setOpen(!open)}
-        aria-expanded={open}
-        aria-controls={`answer-${question}`}
       >
-        <span className="accordion-indicator">{open ? '−' : '+'}</span>
-        <span className="accordion-question">{question}</span>
+        
+        <span className={styles.question}>{question}</span>
+        <span className={styles.icon}>{open ? '−' : '+'}</span>
       </button>
 
       {open && (
-        <div className="accordion-answer" id={`answer-${question}`}>
+        <div className={styles.answer}>
           <p>{answer}</p>
         </div>
       )}
