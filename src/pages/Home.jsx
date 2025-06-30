@@ -7,7 +7,7 @@ export default function Home() {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <section class="page-section faq">
+    <section className="page-section faq">
       <h2>Spørsmål og svar</h2>
       <Accordion data={data} />
     </section>
