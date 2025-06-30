@@ -1,12 +1,39 @@
-# React + Vite
+# Q&A Accordion Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple, responsive FAQ page built with **React** and **Vite**, using data fetched from **Contentful**. Each question/answer is displayed in an accessible accordion component.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Clone the repo
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/your-username/qna-page.git
+cd qna-page
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Add environment variables
+
+Create a `.env` file in the root:
+
+```env
+VITE_CONTENTFUL_SPACE_ID=your_space_id
+VITE_CONTENTFUL_ACCESS_TOKEN=your_access_token
+```
+
+---
+
+### 4. Run the dev server
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` in your browser.
+
+---
